@@ -1,0 +1,170 @@
+<html>
+<head>
+  <title> Profile page </title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <style>
+    body, html {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgb(230, 170, 80), rgb(200, 100, 140));
+    }
+    .user-row {
+    margin-bottom: 14px;
+    }
+
+    .user-row:last-child {
+        margin-bottom: 0;
+    }
+
+    .dropdown-user {
+        margin: 13px 0;
+        padding: 5px;
+        height: 100%;
+    }
+
+    .dropdown-user:hover {
+        cursor: pointer;
+    }
+
+    .table-user-information > tbody > tr {
+        border-top: 1px solid rgb(221, 221, 221);
+    }
+
+    .table-user-information > tbody > tr:first-child {
+        border-top: 0;
+    }
+
+
+    .table-user-information > tbody > tr > td {
+        border-top: 0;
+    }
+    .toppad
+    {
+      margin-top:20px;
+    }
+
+
+
+    .search-form .form-group {
+      float: right !important;
+      transition: all 0.35s, border-radius 0s;
+      width: 32px;
+      height: 32px;
+      background-color: #fff;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+    }
+    .search-form .form-group input.form-control {
+      padding-right: 20px;
+      border: 0 none;
+      background: transparent;
+      box-shadow: none;
+      display:block;
+    }
+    .search-form .form-group input.form-control::-webkit-input-placeholder {
+      display: none;
+    }
+    .search-form .form-group input.form-control:-moz-placeholder {
+      /* Firefox 18- */
+      display: none;
+    }
+    .search-form .form-group input.form-control::-moz-placeholder {
+      /* Firefox 19+ */
+      display: none;
+    }
+    .search-form .form-group input.form-control:-ms-input-placeholder {
+      display: none;
+    }
+    .search-form .form-group:hover,
+    .search-form .form-group.hover {
+      width: 100%;
+      border-radius: 4px 25px 25px 4px;
+    }
+    .search-form .form-group span.form-control-feedback {
+      position: absolute;
+      top: -1px;
+      right: -2px;
+      z-index: 2;
+      display: block;
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      color: #3596e0;
+      left: initial;
+      font-size: 14px;
+    }
+  </style>
+</head>
+  <body>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+   
+   
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Hi DISPLAYNAME :D</h3>
+              <span class="pull-right">
+                <form action="/logout" method="post">
+                <button data-original-title="logout this user" data-toggle="tooltip" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i>
+                </form>
+              </span>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="img-circle img-responsive"> </div>
+                
+                <div class=" col-md-9 col-lg-9 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>Username</td>
+                        <td>USERNAME</td>
+                      </tr>
+                      <tr>
+                        <td>Password</td>
+                        <td>PASSWORD</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ">
+                        <h4>Easily search by hashtags or username and find all related <span style="color:orange">jeeks</span></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <form action="/search" class="search-form" method="post">
+                            <div class="form-group has-feedback">
+                            <label for="search" class="sr-only">Search</label>
+                            <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                              <span class="glyphicon glyphicon-search form-control-feedback" type="submit"></span>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+                  
+                  
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1 toppad" >
+        <div class="panel panel-info">
+          <div class="panel-body">
+              <div class="row">
+                <div class=" col-md-9 ">
+                  <!-- -->
+                </div>
+              </div>
+            </div>            
+        </div>
+    </div>
+
+
+                  <!--<a href="#" class="btn btn-primary">Add New Jeek</a>
+                  <a href="#" class="btn btn-primary">Team Sales Performance</a>-->
+  </body>
+</html>
